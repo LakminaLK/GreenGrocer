@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #e8ffe7;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    z-index: 1; 
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+
+    
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  position:absolute;
+  border-radius: 30%;
+  margin-left: -20px;
+  position: fixed;
+  margin-top: -14px;
+}
+
+#chk1{
+  display: none;
+}
+
+.logo h1{
+  padding:  0px 0px 0px 43px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+#search-banner {
+    max-width: 1550px;
+    height: 600px;
+    border-radius: 0px;
+    background-color: #93f57b;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: bottom right;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+
+header .logo {
+    flex: 1;
+    color: #ffffff;
+    margin-left: 40px;
+    margin-top: 0%;
+    text-transform: uppercase;
+    font-size: 15px;
+    z-index: 1;
+  
+}
+
+header .search-box {
+    flex: 1;
+    position: relative;
+    text-align: right;
+    padding-left: 35px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+    
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+    
+}
+
+header ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 14px;
+    align-items: self-end;
+}
+
+header ul li {
+    list-style: none;
+    margin-top: -50px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid cadetblue;
+}
+
+header .menu {
+    font-size: 280x;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1219px) {
+  .search-box button {
+      position: absolute;
+  }
+  .logo h1{
+      padding: 0px 0px 0px 43px;
+  }
+  header ul {
+      position: fixed;
+      top: 100px;
+      right: -100%;
+      background: rgba(0, 0, 0, 0.5);
+      height: calc(100vh - 100px);
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.5s linear;
+      z-index: 1; /* Ensure navigation is above other elements */
+  }
+
+  header .menu {
+      display: block;
+      width: 120px;
+      text-align:center;
+      z-index: 1; /* Ensure menu icon is above other elements */
+  }
+
+  header .logo{
+      position: relative;
+  }
+  #chk1:checked ~ ul {
+      right:0;
+}
+}
+
+@media (max-width: 760px) {
+  .logo h1{
+      padding: 0px 0px 0px 43px;
+      position: absolute;
+      margin-top: -25.5px;
+  }
+  header .logo img {
+      margin-top: -25px;
+  }
+  
+}
+@media (max-width: 450px) {
+  .logo h1{
+      display: none;
+  }
+  .search-box{
+      margin-left: -190px;
+      margin-right: -40px;
+      padding: 0%;
+  }
+}
+
+/*product card css*/
+.products h2{
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 60px;
+  transition: all 0.3s;
+  
+}
+
+.products p{
+    font-size: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+}
+
+
+.all-products{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product{
+  overflow-x: hidden;
+  overflow-y:hidden;
+  background: #ffffff;
+  color:#21201e;
+  text-align: center;
+  width: 260px;
+  height: 350px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 2rem;
+  box-shadow: 0px 1px 10px #000;
+}
+
+.product .product-price{
+  font-size: 16px;
+}
+
+.product .product-title{
+  font-size: 18.1px;
+}
+
+.product img{
+    max-height: 150px;
+}
+
+.product:hover img {
+  scale: 1.1;
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+  color: #ececec;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2c3e50;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.product a:hover{
+  transform: scale(1.1);
+}
+ 
+
+/* Footer CSS */
+footer {
+    position: relative; /* Position at the bottom of the viewport */
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-distributed {
+    background-color:  #043301;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .footer-distributed .footer-left {
+    width: 30%;
+  }
+  
+  .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span {
+    color: #e0ac1c;
+  }
+  
+  .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center {
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+  }
+  
+  .footer-distributed .footer-right {
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-distributed .footer-icons a:hover {
+    background-color: #3f71ea;
+  }
+  
+  .footer-links a:hover {
+    color: #3f71ea;
+  }
+  
+  @media (max-width: 880px) {
+    .container {
+      margin-bottom: 120vh;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  }
+  
+
