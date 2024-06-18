@@ -11,181 +11,180 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <!--navigation-->
-    <header>
-      <input type="checkbox" name="" id="chk1">
-      <section class="logo">
-          <img src="./Images/e61839c56dae1f49bae9e6c03a51e2a4.jpg">
-          <h1>Green Grocer</h1>
-      </section>
-      
-      <section class="search-box">
-          <form>
-              <input type="text" name="search" id="srch" placeholder="Search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-      </section>
-      <ul class="nav-ul">
-          <li><a href="./index.html">Home</a></li>
-          <li> <a href="./products.html">Products</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./register.html">Loyalty Registration</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-          </li>
-      </ul>
-      <section class="menu">
-          <label for="chk1">
-              <i class="fa fa-bars"></i>
-          </label>
-      </section>
-      
-  </header>
+<body>
+  <!--navigation-->
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <section class="logo">
+        <img src="./Images/e61839c56dae1f49bae9e6c03a51e2a4.jpg">
+        <h1>Green Grocer</h1>
+    </section>
     
+    <section class="search-box">
+        <form>
+            <input type="text" name="search" id="srch" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </section>
+    <ul class="nav-ul">
+        <li><a href="./index.html">Home</a></li>
+        <li> <a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./register.html">Loyalty Registration</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+    </ul>
+    <section class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </section>
+  </header>
+
   <br><br><br><br><br><br>
 
-    <!--Loyalty registration form-->
-    <section class="container">
-      <h1>Loyalty Registration</h1>
-      <form action="#" class="form">
+  <!--Loyalty registration form-->
+  <section class="container">
+    <h1>Loyalty Registration</h1>
+    <form action="#" class="form">
+      <section class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required />
+      </section>
+  
+      <section class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" required />
+      </section>
+  
+      <section class="column">
         <section class="input-box">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter full name" required />
+          <label>Phone Number</label>
+          <input type="number" placeholder="Enter phone number" required />
         </section>
-
         <section class="input-box">
-          <label>Email Address</label>
-          <input type="text" placeholder="Enter email address" required />
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter birth date" required />
         </section>
-
+      </section>
+      <section class="gender-box">
+        <h3>Gender</h3>
+        <section class="gender-option">
+          <section class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">male</label>
+          </section>
+          <section class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Female</label>
+          </section>
+          <section class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">prefer not to say</label>
+          </section>
+        </section>
+      </section>
+      
+      <section class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter street address" required />
+        <input type="text" placeholder="Enter street address line 2" required />
         <section class="column">
-          <section class="input-box">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone number" required />
+          
+          <input type="text" placeholder="Enter your city" required />
+        </section>
+        <section class="column">
+         
+          <input type="number" placeholder="Enter postal code" required />
+        </section>
+      </section>
+      <section class="loyalty-box">
+        <h3>Loyalty Scheme</h3>
+        <section class="loyalty-option">
+          <section class="loyalty">
+            <input type="radio" id="basic" name="loyalty" checked />
+            <label for="basic">Basic</label>
           </section>
-          <section class="input-box">
-            <label>Birth Date</label>
-            <input type="date" placeholder="Enter birth date" required />
+          <section class="loyalty">
+            <input type="radio" id="silver" name="loyalty" />
+            <label for="silver">Silver</label>
+          </section>
+          <section class="loyalty">
+            <input type="radio" id="gold" name="loyalty" />
+            <label for="gold">Gold</label>
           </section>
         </section>
-        <section class="gender-box">
-          <h3>Gender</h3>
-          <section class="gender-option">
-            <section class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">male</label>
-            </section>
-            <section class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Female</label>
-            </section>
-            <section class="gender">
-              <input type="radio" id="check-other" name="gender" />
-              <label for="check-other">prefer not to say</label>
-            </section>
-          </section>
-        </section>
-        
-        <section class="input-box address">
-          <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input type="text" placeholder="Enter street address line 2" required />
-          <section class="column">
-            
-            <input type="text" placeholder="Enter your city" required />
-          </section>
-          <section class="column">
-           
-            <input type="number" placeholder="Enter postal code" required />
-          </section>
-        </section>
-        <section class="loyalty-box">
-          <h3>Loyalty Scheme</h3>
-          <section class="loyalty-option">
-            <section class="loyalty">
-              <input type="radio" id="basic" name="loyalty" checked />
-              <label for="basic">Basic</label>
-            </section>
-            <section class="loyalty">
-              <input type="radio" id="silver" name="loyalty" />
-              <label for="silver">Silver</label>
-            </section>
-            <section class="loyalty">
-              <input type="radio" id="gold" name="loyalty" />
-              <label for="gold">Gold</label>
-            </section>
-          </section>
-        </section>
-        <button>Register</button>
-        <br><br><br>
-        <section class="loyalty-benefits">
-          <h2>Loyalty Scheme Benefits:</h2><br>
-            <ul class="ben">
-                <li><strong>Basic(1.5$ for month):</strong><p> Earn 1 point for every $1 spent.<br> Receive exclusive discounts on selected products. <br>Access to members-only promotions.</p>
-                </li>
-                <br>
-                <li><strong>Silver(2.5$ for month):</strong><p> Earn 1.5 points for every $1 spent.<br> 5% discount on all purchases.<br> Free delivery on orders over $50<br> Access to members-only promotions.</p>
-                </li>
-                <br>
-                <li><strong>Gold(3.5$ for month):</strong><p> Earn 2 points for every $1 spent.<br> 10% discount on all purchases.<br> Free delivery on all orders.<br> Priority customer support.<br> Exclusive invitations to special events and promotions.</p>
-                </li>
-            </ul>
-        </section>
-      </form>
-    </section>
+      </section>
+      <button>Register</button>
+      <br><br><br>
+      <section class="loyalty-benefits">
+        <h2>Loyalty Scheme Benefits:</h2><br>
+          <ul class="ben">
+              <li><strong>Basic(1.5$ for month):</strong><p> Earn 1 point for every $1 spent.<br> Receive exclusive discounts on selected products. <br>Access to members-only promotions.</p>
+              </li>
+              <br>
+              <li><strong>Silver(2.5$ for month):</strong><p> Earn 1.5 points for every $1 spent.<br> 5% discount on all purchases.<br> Free delivery on orders over $50<br> Access to members-only promotions.</p>
+              </li>
+              <br>
+              <li><strong>Gold(3.5$ for month):</strong><p> Earn 2 points for every $1 spent.<br> 10% discount on all purchases.<br> Free delivery on all orders.<br> Priority customer support.<br> Exclusive invitations to special events and promotions.</p>
+              </li>
+          </ul>
+      </section>
+    </form>
+  </section>
 
-    <!--Footer-->
-    <footer class="footer-distributed">
-
-      <section class="footer-left">
-          <h3>Green<span>Grocer</span></h3>
+  <!--Footer-->
+  <footer class="footer-distributed">
   
+    <section class="footer-left">
+        <h3>Green<span>Grocer</span></h3>
+    
+        <p class="footer-links">
           <p class="footer-links">
-            <p class="footer-links">
-              <a href="./index.html">Home</a>
-              |
-              <a href="./about.html">About us</a>
-              |
-              <a href="./products.html">Products</a>
-          </p>
-          </p>
-  
-          <p class="footer-company-name">Copyright © 2024 <strong>GreenGrocer</strong> All rights reserved</p>
-      </section>
-  
-      <section class="footer-center">
-          <section>
-              <i class="fa fa-map-marker"></i>
-              <p><span>D.S.Senanayake RD</span>
-                  Kandy</p>
-          </section>
-  
-          <section>
-              <i class="fa fa-phone"></i>
-              <p>+94 81-747 87 89</p>
-          </section>
-          <section>
-              <i class="fa fa-envelope"></i>
-              <p><a href="mailto:sagar00001.co@gmail.com">greengrocer@gmail.com</a></p>
-          </section>
-      </section>
-      <section class="footer-right">
-          <p class="footer-company-about">
-              <span>About the company</span>
-              <strong>GreenGrocer</strong> is a grocery website where you can find and buy grocery products online.
-          </p>
-          <section class="footer-icons">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-youtube"></i></a>
-          </section>
-      </section>
-    </footer>
-  </body>
+            <a href="./index.html">Home</a>
+            |
+            <a href="./about.html">About us</a>
+            |
+            <a href="./products.html">Products</a>
+        </p>
+        </p>
+    
+        <p class="footer-company-name">Copyright © 2024 <strong>GreenGrocer</strong> All rights reserved</p>
+    </section>
+    
+    <section class="footer-center">
+        <section>
+            <i class="fa fa-map-marker"></i>
+            <p><span>D.S.Senanayake RD</span>
+                Kandy</p>
+        </section>
+    
+        <section>
+            <i class="fa fa-phone"></i>
+            <p>+94 81-747 87 89</p>
+        </section>
+        <section>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">greengrocer@gmail.com</a></p>
+        </section>
+    </section>
+    <section class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>GreenGrocer</strong> is a grocery website where you can find and buy grocery products online.
+        </p>
+        <section class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </section>
+    </section>
+  </footer>
+</body>
 </html>
